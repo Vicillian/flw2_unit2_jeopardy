@@ -36,4 +36,11 @@ let questionValues = [100, 200, 300, 400, 500];
  */
 function renderQuestions() {
     // Add code here
+    let value = 100
+    for (let i = 0; i < numCategories; i++) {
+        for (const questionValues of questionValues)
+        $(#questions).append(<div class='question'><div class='question-cell'>"$" + value</div></div>);
+        value = value + 100
+        }
+    value = 100
 }
