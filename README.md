@@ -34,7 +34,7 @@ Below is the recommended order in which to complete the project.
 
 3. If done correctly, the following should be true:
 
-   1. Each question  block is clickable
+   1. Each question block is clickable
    2. On-click renders a popup like so:
 
    ![onclick](https://i.imgur.com/lUb4wOp.png)
@@ -42,6 +42,7 @@ Below is the recommended order in which to complete the project.
    3. Clicking "Show Answer" will show the answer like so:
 
    ![answer](https://i.imgur.com/bhvRj4s.png)
+
    4. Clicking "Close" will hide the modal and remove the question from the board like so:
 
    ![closed](https://i.imgur.com/IBIyhrJ.png)

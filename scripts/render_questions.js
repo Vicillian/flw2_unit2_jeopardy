@@ -36,14 +36,15 @@ let questionValues = [100, 200, 300, 400, 500];
  */
 function renderQuestions() {
   // Add code here
-  for (let i = 0; i < numCategories; i++) {
-    let questionsColumn = `<div class='question-column' data-category='${i}'>`;
-    for (const qValue of questionValues) {
-      questionsColumn += `<div class="question">
-        <div class="question-column" data-category = "0">$${qValue}</div>
-      </div>`;
+  var columnNum = "i";
+  for (var i = 0; i < numCategories; i++) {
+    $("#questions").append(`<div class="questions-column" id="${columnNum}"></div>`);
+    var columnName = "#" + columnNum;
+    for (let qValue of questionValues) {
+      $(columnName).append(
+        `<div class='question'><div class='question-cell' data-category='${i}'>${qValue}</div></div>`
+      );
     }
-    questionsColumn += "</div>";
-    $("#questions").append(questionsColumn);
+    columnNum += "i";
   }
 }
